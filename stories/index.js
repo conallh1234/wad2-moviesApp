@@ -6,7 +6,6 @@ import FilterControls from "../src/components/filterControls";
 import MoviesHeader from "../src/components/headerMovieList";
 import MovieList from "../src/components/movieList";
 import MovieDetails from "../src/components/movieDetails"
-import MovieHeader from "../src/components/headerMovie";
 
 const sample = {
   adult: false,
@@ -69,7 +68,11 @@ const sample = {
   production_countries: [
     {
       iso_3166_1: "US",
-      name: "United States of America"
+      name: "United States of America",
+    },
+    {
+      iso_3166_1: 'US',
+      name: "Canada",
     }
   ],
   release_date: "2017-12-13",

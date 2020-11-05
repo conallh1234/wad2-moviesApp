@@ -51,6 +51,7 @@ export default ({ movie }) => {
           </li>
         ))}
       </ul>
+
     </>
   );
 };
