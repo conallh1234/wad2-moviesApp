@@ -9,7 +9,7 @@ const PersonHeader = ({ person }) => {
         <h2>
           {person.name}
           {"  "}
-          <a href={person.homepage}>
+          <a href={person.homepage} target="blank">
             <FontAwesomeIcon icon={["fas", "home"]} size="1x" />
           </a>
         </h2>

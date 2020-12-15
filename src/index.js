@@ -34,7 +34,7 @@ const App = () => {
                 <Route exact path="/movies/trending" component={TrendingMoviesPage} />
                 <Route exact path="/movies/watchlist" component={WatchListPage}/>
                 <Route path="/movies/:id" component={MoviePage} />
-                <Route path="/person/:id" component={PersonPage} />
+                <Route path="/people/:id" component={PersonPage} />
                 <Route path="/people" component={PeoplePage} />
                 <Route path="/" component={HomePage} />
                 <Redirect from="*" to="/" />

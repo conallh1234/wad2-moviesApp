@@ -17,50 +17,54 @@ export default ({ person }) => {
       </ul>
 
       <ul className="list-group list-group-horizontal">
-        <li key="rdh" className="list-group-item list-group-item-dark">
-          Alias(s)
+        <li key="ruh" className="list-group-item list-group-item-dark">
+          Deathday (if Applicable)
         </li>
-        <li key="rdv" className="list-group-item ">
-        {person.also_known_as.map(a => (
-          <li key={a.name} className="list-group-item">
-            {a.name}
-          </li>
-        ))}
+        <li key="rut" className="list-group-item ">
+        {person.deathday}
         </li>
       </ul>
 
       <ul className="list-group list-group-horizontal">
-        <li key="rdh" className="list-group-item list-group-item-dark">
+        <li key="ruh" className="list-group-item list-group-item-dark">
           Biography
         </li>
-        <li key="rdv" className="list-group-item ">
+        <li key="rut" className="list-group-item ">
           {person.biography}
         </li>
       </ul> 
 
       <ul className="list-group list-group-horizontal">
-        <li key="gh" className="list-group-item list-group-item-dark">
+        <li key="ruh" className="list-group-item list-group-item-dark">
           Known For
         </li>
+        <li key="rut" className="list-group-item ">
         {person.known_for_department}
+        </li>
       </ul>
       <ul className="list-group list-group-horizontal">
-        <li key="slh" className="list-group-item list-group-item-dark">
+        <li key="rut" className="list-group-item list-group-item-dark">
           Popularity
         </li>
+        <li key="rut" className="list-group-item ">
         {person.popularity}
+        </li>
       </ul>
       <ul className="list-group list-group-horizontal">
         <li key="pch" className="list-group-item list-group-item-dark">
           Place Of Birth
         </li>
+        <li key="rut" className="list-group-item ">
         {person.place_of_birth}
+        </li>
       </ul>
       <ul className="list-group list-group-horizontal">
         <li key="pco" className="list-group-item list-group-item-dark">
           IMDB ID
         </li>
+        <li key="rut" className="list-group-item ">
         {person.imdb_id}
+        </li>
       </ul>
     </>
   );

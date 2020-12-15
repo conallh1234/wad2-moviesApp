@@ -3,6 +3,12 @@ import PersonHeader from '../headerPerson'
 import "./personPage.css";
 
 const TemplatePersonPage = ({ person, children }) => {
+  const mystyle = {
+      backgroundColor: "White",
+      padding: "10px",
+      fontFamily: "Arial"
+  }
+
   return (
     <>
       <PersonHeader person={person} />
@@ -18,7 +24,7 @@ const TemplatePersonPage = ({ person, children }) => {
             alt={person.name}
           />
         </div>
-        <div className="col-9">{children}</div>
+        <div style={mystyle} className="col-8">{children}</div>
       </div>
     </>
   );

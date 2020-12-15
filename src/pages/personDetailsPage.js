@@ -1,6 +1,5 @@
 import PageTemplate from "../components/templatePersonPage";
 import PersonDetails from "../components/personDetails";
-import { withRouter } from "react-router-dom";
 import usePerson from "../hooks/usePerson";
 
 const PersonPage = props => {
@@ -15,10 +14,10 @@ const PersonPage = props => {
         </PageTemplate>
       </>
     ) : (
-      <p>Waiting for movie details</p>
+      <p>Waiting for person details</p>
     )}
   </>
   );
 };
 
-export default withRouter(PersonPage);
+export default PersonPage;
