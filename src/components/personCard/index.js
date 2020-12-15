@@ -1,42 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./creditCard.css";
+import "./personCard.css";
 import "../../globals/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CreditsCard = ({credits, action}) => {
+const PersonCard = ({person}) => {
 
   return (
     <div className="col-sm-3">
       <div className="card  bg-dark text-white">
-      <Link to={`/movies/${credits.id}/credits`}>
+      <Link to={`/people/${person.id}`}>
         <img
           className="card-img-tag center "
-          alt={id.title}
+          alt={person.name}
           src={
-            credits.poster_path
-              ? `${credits.id.profile_path}`
+            person.profile_path
+              ? `https://image.tmdb.org/t/p/w500/${person.profile_path}`
               : "./film-poster-placeholder.png"
           }
         />
         </Link>
         <div className="card-body ">
-          <h4 className="card-title ">{credits.cast.name}</h4>
-          <p>
-            <FontAwesomeIcon icon={["fas", "calendar"]} />
-            <span> {credits.gender}</span>
-          </p>
+          <h4 className="card-title ">{person.name}</h4>
           <p>
             <FontAwesomeIcon icon={["fas", "star"]} />
-            <span> {credits.popularity}</span>
+            <span> {person.popularity}</span>
           </p>
-        </div>
-        <div className="card-footer">
-           {action(credits)}
         </div>
       </div>
     </div>
   );
 };
 
-export default CreditsCard;
+export default PersonCard;
