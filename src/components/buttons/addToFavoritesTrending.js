@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import {MoviesContext} from "../../contexts/moviesContext";
 
-const AddToFavoritesButton = ({ movie }) => {
+const AddToFavoritesTrending = ({ movie }) => {
   const context = useContext(MoviesContext);
 
   const handleAddToFavorite = e => {
     e.preventDefault();
-    context.addToFavorites(movie.id);
+    context.addToFavoritesTrending(movie.id);
   };
   return (
     <button
@@ -22,4 +22,4 @@ const AddToFavoritesButton = ({ movie }) => {
 
 
 
-export default AddToFavoritesButton;
+export default AddToFavoritesTrending;

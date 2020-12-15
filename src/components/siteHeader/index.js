@@ -12,6 +12,11 @@ const SiteHeader = () => {
           TMDB Client
         </Link>
       </nav>
+      <nav className="navbar-brand text-blue">
+        <Link className=" text-blue" to="/movies/search">
+          Movies Search
+        </Link>
+      </nav>
       <FontAwesomeIcon
         className="navbar-text text-dark"
         icon={["fas", "video"]}
@@ -33,13 +38,18 @@ const SiteHeader = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-link text-blue" to="">
+            <Link className="nav-link text-blue" to="/movies/trending">
               Trending
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link text-blue" to="/movies/upcoming">
               Upcoming
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-blue" to="/movies/watchlist">
+              Watch List
             </Link>
           </li>
           <li className="nav-item">

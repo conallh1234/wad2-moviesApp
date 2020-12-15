@@ -6,6 +6,7 @@ export default ({ movie }) => {
     <>
       <h4>Overview</h4>
       <p>{movie.overview}</p>
+
       <ul className="list-group list-group-horizontal">
         <li key="ruh" className="list-group-item list-group-item-dark">
           Runtime (min.)
@@ -13,6 +14,9 @@ export default ({ movie }) => {
         <li key="rut" className="list-group-item ">
           {movie.runtime}
         </li>
+      </ul>
+
+      <ul className="list-group list-group-horizontal">
         <li key="rdh" className="list-group-item list-group-item-dark">
           Release Date
         </li>
@@ -20,6 +24,15 @@ export default ({ movie }) => {
           {movie.release_date}
         </li>
       </ul>
+
+      <ul className="list-group list-group-horizontal">
+        <li key="rdh" className="list-group-item list-group-item-dark">
+          Tagline
+        </li>
+        <li key="rdv" className="list-group-item ">
+          {movie.tagline}
+        </li>
+      </ul> 
 
       <ul className="list-group list-group-horizontal">
         <li key="gh" className="list-group-item list-group-item-dark">
@@ -60,7 +73,7 @@ export default ({ movie }) => {
             {pdc.name}
           </li>
         ))}
-      </ul>   
+      </ul>
     </>
   );
 };
