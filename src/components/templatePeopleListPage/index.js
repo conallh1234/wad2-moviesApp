@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../headerPeopleList";
 import PeopleList from "../personList";
-import FilterControls from "../filterControls";
+import PeopleFilterControls from "../peopleFilterControls";
 
 const PeopleListPageTemplate = ({people, title}) => {
   const [nameFilter, setNameFilter] = useState("");
@@ -18,7 +18,7 @@ const PeopleListPageTemplate = ({people, title}) => {
   return (
     <>
       <Header title={title} numPeople={displayedPeople.length} />
-      <FilterControls onUserInput={handleChange} numMovies={displayedPeople.length}/>
+      <PeopleFilterControls onUserInput={handleChange} numMovies={displayedPeople.length}/>
       <PeopleList
        people={displayedPeople}
       />
