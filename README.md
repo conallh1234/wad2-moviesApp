@@ -4,7 +4,6 @@ Name: Conall Heffernan
 
 ## Features.
 
- 
  + Trending Movies - Displays trending movies from an API fetch
  + Upcoming Movies - Displays Upcoming movies from an API fetch
  + People = Displays a list of popular actors with their popularity rating
@@ -12,7 +11,6 @@ Name: Conall Heffernan
 
 
 ## API Data Model.
-
 
 + https://api.themoviedb.org/3/movie/${id} - get detailed information on a specific movie. 
 + https://api.themoviedb.org/3/genre/movie/list - get a list of movie genres
@@ -24,10 +22,10 @@ Name: Conall Heffernan
 
 ## App Design.
 
-### Component catalogue (If required).
-
-
 ![][stories]
+
++ Stories included for all relevant views, with the exception of movie details cast view
+
 
 ### UI Design.
 
@@ -64,7 +62,7 @@ Name: Conall Heffernan
 >Clicking the 'Full Review' for a review extract will display the full text of the review
 
 ![][homePageLink]
->If there is a website associated with an actor clicking the house icon beside their name will open said website in a new tab
+>If there is a website associated with an actor clicking the house icon beside their name will open said website in a new tab 
 >In a similar fashion on the movie details page there is also a house icon which will bring the user to the home page for that movies production company in a new tab
 
 ![][actorLink]
@@ -79,7 +77,7 @@ Name: Conall Heffernan
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
-[stories]: ./public/storybook.png
+[stories]: ./public/stories.png
 [homePageLink]: ./public/homePageLink.png
 [actorLink]: ./public/actorLink.png
 [peoplePage]: ./public/peoplePage.png
