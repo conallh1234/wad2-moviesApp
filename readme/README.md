@@ -74,8 +74,8 @@ Name: Conall Heffernan
 
 ---------------------------------
 
-[cardLink]: ./public/cardLink.png
-[movieDetails]: ./public/movieDetails.png
+[cardLink]: ../public/cardLink.png
+[movieDetails]: ../public/movieDetails.png
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
