@@ -31,17 +31,19 @@ Name: Conall Heffernan
 
 ### UI Design.
 
-...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
 
-![][movieActors]
->Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
+![][movieDetails]
+>Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews. Clicking 'Show Cast' will display the cast of the movie along with a link to their profile. 
 
 ![][review]
 >Shows the full text for a movie review. 
 
-## Routing.
+![][peoplePage]
+>Displays a list of popular actors along with their popularity rating
 
-...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
+
+
+## Routing.
 
 + /movies/favorites (protected) - displays the user's favorite movies selection.
 + /reviews/:id (public) - displays the full text of a movie review.
@@ -54,29 +56,31 @@ Name: Conall Heffernan
 
 ### Data hyperlinking.
 
-.... Use screenshots to illustrate where data hyperlinking is present in your views - include captions.
-
-![][hyperlink1]
+![][cardLink]
 > Clicking a card causes the display of that movie's details.
 > Clicking a persons card will open their details page in a new tab
 
 ![][reviewLink]
 >Clicking the 'Full Review' for a review extract will display the full text of the review
 
-![][homepageLink]
+![][homePageLink]
 >If there is a website associated with an actor clicking the house icon beside their name will open said website in a new tab
 >In a similar fashion on the movie details page there is also a house icon which will bring the user to the home page for that movies production company in a new tab
 
-![][actorPageLink]
+![][actorLink]
 >On the movie details page when the cast is being displayed a user can click on 'view actor page' where they are brought to the details page for that actor
 
 
 
 ---------------------------------
 
-[hyperlink1]: ./public/hyperlink1.png
-[movieDetail]: ./public/movieDetail.png
+[cardLink]: ./public/cardLink.png
+[movieDetails]: ./public/movieDetails.png
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
 [stories]: ./public/storybook.png
+[homePageLink]: ./public/homePageLink.png
+[actorLink]: ./public/actorLink.png
+[peoplePage]: ./public/peoplePage.png
+[personPage]: ./public/personPage.png
