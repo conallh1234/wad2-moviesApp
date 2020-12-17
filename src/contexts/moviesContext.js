@@ -11,7 +11,9 @@ const reducer = (state, action) => {
           m.id === action.payload.movie.id ? { ...m, favorite: true } : m
         ),
         upcoming: [...state.upcoming],
-        trending: [...state.trending],
+        trending: state.trending.map((m) =>
+        m.id === action.payload.movie.id ? { ...m, favorite: true} : m
+        ),
       };
     case "add-favorite-trending":
       return {
@@ -19,7 +21,9 @@ const reducer = (state, action) => {
           m.id === action.payload.movie.id ? { ...m, favorite: true} : m
         ),
         upcoming: [...state.upcoming],
-        movies: [...state.movies],
+        movies: state.movies.map((m) =>
+          m.id === action.payload.movie.id ? { ...m, favorite: true } : m
+        ),
       };
     case "load":
       return { movies: action.payload.movies, upcoming: [...state.upcoming], trending: [...state.trending] };

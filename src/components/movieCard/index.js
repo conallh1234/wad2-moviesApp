@@ -8,7 +8,7 @@ const MovieCard = ({movie, action}) => {
 
   return (
     <div className="col-sm-3">
-      <div className="card  bg-dark text-white">
+      <div className="card  bg-success text-white">
       <Link to={`/movies/${movie.id}`}>
         <img
           className="card-img-tag center "

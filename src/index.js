@@ -21,7 +21,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <div className="jumbotron">
-      <SiteHeader /> 
+      <SiteHeader/> 
       <div className="container-fluid">
         <MoviesContextProvider>
           <PeopleContextProvider>

@@ -12,7 +12,7 @@ const PeopleFilterControls = props => {
   };
 
   return (
-    <div className="row bg-warning">
+    <div id="filterdiv" className="row">
       <div className="col-md-12">
         <h4>
           <span>Filter By Name:</span>

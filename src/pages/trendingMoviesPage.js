@@ -5,36 +5,21 @@ import AddToFavouritesTrending from '../components/buttons/addToFavoritesTrendin
 
 const TrendingMoviesPage = () => {
   const context = useContext(MoviesContext);
-  const favoritesTrending = context.trending.filter((m) => { return ("favorite" in m)}); //gets favorites from trending A
-  const favoritesDiscover = context.movies.filter((m) => { return ("favorite" in m)}); //gets favorites from discover B
-  console.log(favoritesDiscover);
-  var i = 0;
-  var k =0;
-  //need to return a list of trending movies with favorites from discover and trending removed
-
-  const exclFavorites = []; // favortiesTrending with any favoritesDiscover entries removed
-  
-    for(i = 0; i < favoritesTrending.length; i++){
-      let found = false
-      for(k = 0; k < favoritesDiscover.length; k++) {
-          if (favoritesTrending[i].id === favoritesDiscover[k].id )
-            found = true
-      }
-      if (!found) 
-          exclFavorites.push(favoritesTrending[i])
-    }
-
-
-
-  const movies = context.trending.filter((m) => { 
-    return !(exclFavorites) });
+  //const favoritesTrending = context.trending.filter((m) => { return ("favorite" in m)}); //gets favorites from trending A
+    
+    var favoritesTrending = context.trending.filter((m) => { return !("favorite" in m)}); //gets all from trending except for favourites
+    const favoritesDiscover = context.movies.filter((m) => { return ("favorite" in m)}); //gets favorites from discover 
+//sr added
+    //remove the favourites that are in the movies favourites
+    favoritesTrending = favoritesTrending.filter( ( m ) => !favoritesDiscover.includes( m ) );
 
   return (
       <PageTemplate 
         title='No. Movies'
-        movies={movies}
-        action={(movie) => {
-          return <AddToFavouritesTrending movie={movie} /> 
+        //movies={movies}
+          movies={favoritesTrending} //show the trending without the favouries from trending and movies
+          action={(movie) => {
+          return <AddToFavouritesTrending movie={movie} />
         }}
       />
   );
