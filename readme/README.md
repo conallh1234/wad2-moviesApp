@@ -4,13 +4,11 @@ Name: Conall Heffernan
 
 ## Features.
 
-...... A bullet-point list of the ADDITIONAL user features you have implemented for the  Movies Fan app ......,
  
  + Trending Movies - Displays trending movies from an API fetch
  + Upcoming Movies - Displays Upcoming movies from an API fetch
  + People = Displays a list of popular actors with their popularity rating
- + People Filter = Allows user to filter actors by name
- + 
+ + People Filter = Allows user to filter actors by name 
 
 
 ## API Data Model.
@@ -58,7 +56,7 @@ Name: Conall Heffernan
 
 .... Use screenshots to illustrate where data hyperlinking is present in your views - include captions.
 
-![][cardLink]
+![][hyperlink1]
 > Clicking a card causes the display of that movie's details.
 > Clicking a persons card will open their details page in a new tab
 
@@ -76,7 +74,7 @@ Name: Conall Heffernan
 
 ---------------------------------
 
-[model]: ./data.jpg
+[hyperlink1]: ./public/hyperlink1.png
 [movieDetail]: ./public/movieDetail.png
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
